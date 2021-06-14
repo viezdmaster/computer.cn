@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Настройка Вашего компьютера </title>
+		<style>
+   .center {
+    width: 200px; /* Ширина элемента в пикселах */
+    margin: auto; /* Выравниваем по центру */
+   }
+  </style>
+  <style>
+   a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+  </style>
+	<div class= "center">	<img src = "image\icon_computer.png" height="200" width="200" alt = "logo" align = "center"> <!-- изображение с логотипом --></div>
+		<style>
+   .center2 {
+    width: 550px; /* Ширина элемента в пикселах */
+    margin: auto; /* Выравниваем по центру */
+   }
+  </style>
+		<div class= "center2">
+		<h1>Компьютерный выездной мастер <img src = "image\palec.png" height="50" width="50"></h1><!-- заголовок первого уровня -->
+	</div>
+	</head>
+	 <style>
+   body {
+    background-image: url(image/fon.jpg); /* Путь к фоновому изображению */
+    background-color: ; /* Цвет фона */
+   }
+  </style>
+ 
+  <img src="image/time.png" height="100" width="100" id="img_4"  style="position:right;opacity: 0; filter: alpha(opacity=0); " >
+
+ <img src="image/ryka.png" height="100" width="100" id="img_1"  style="position:right;opacity: 0; filter: alpha(opacity=0); " >
+
+ <img src="image/kachestvo.png" height="100" width="100" id="img_2"  style="position:right;opacity: 0; filter: alpha(opacity=0); "  >
+ <img src="image/dom.png" height="100" width="100" id="img_3"  style="position:right;opacity: 0; filter: alpha(opacity=0); "  >
+
+</div></div>
+
+<script type="text/javascript">
+22
+ var image_count = 4;
+23
+ var interval = 3; //пауза
+24
+ var time_out = 3; //скорость смены картинки
+25
+ var i = 4;
+26
+ var timeout;
+27
+ var opacity = 100;
+28
+ function change_image() {
+29
+ opacity--;
+30
+ var j = i + 1;
+31
+ var current_image = 'img_' + i;
+32
+ if (i == image_count) j = 1;
+33
+ var next_image = 'img_' + j;
+34
+ document.getElementById(current_image).style.opacity=opacity/30;
+35
+ document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
+36
+ document.getElementById(next_image).style.opacity= (30-opacity)/30;
+37
+ document.getElementById(next_image).style.filter=' alpha(opacity='+(30-opacity)+')';
+38
+ timeout = setTimeout("change_image()", time_out);
+39
+if (opacity==1) {
+40
+ opacity = 100;
+41
+ clearTimeout(timeout);
+42
+i++;
+43
+if (i>image_count) i=1;
+44
+timeout = setTimeout("change_image()", interval);
+45
+ }
+46
+ }
+47
+change_image()
+48
+</script>
+  <style>
+   .layer1 {
+    float: right; /* Обтекание по левому краю */
+    background: #ffffff; /* Цвет фона */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 1px; /* Поля вокруг текста */
+    margin-left: 10px; /* Отступ справа */
+    width: 75%; /* Ширина блока */
+   }
+  </style>
+  <style>
+      #navbar ul{
+        display: none;
+        background-color: #f90;
+        position: absolut;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin: 10;
+        padding: 10px;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 30px;
+        background-color: #000000;
+        padding-left: 450px;
+        min-width: 50px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 1%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 220px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #navbar ul li { float: none; }
+      #navbar li:hover { background-color: #f90; }
+      #navbar ul li:hover { background-color: #666; }
+    </style>
+ </head>
+  <body>
+  
+    <ul id="navbar">
+     
+      <li><a href="file:///D:/Комп%20мастер/top_neis.html">Главные неисправности</a>
+      </li>
+	  <li><a href="praise.html">Прайс услуг</a>
+      </li>
+	      <li><a href="contacts.html">Контакты</a>
+      </li>
+	  	  <li><a href="zaiavka.html">Подать заявку онлайн</a>
+      </li>
+      </li>
+    </ul>
+	<div> 
+</body>
+<table border="1" align="center" class="layer1">
+    <caption><h2><b><font color="blue"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWieGC9RmDo4-O1RrzKB51MeVpS1ItwPud1k2HKNHEc9GaMA/viewform?embedded=true" width="640" height="1108" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+</font></b></h2></caption>
+	</table>
+	<nav align="left">
+       	<ul>
+		<li><a href = "file:///D:/Комп%20мастер/index.html"><h2>Главная</a></h2></li>
+		<li><a href = "#"><h2>Неисправности</a></h2></li> <!-- ссылка в элементе списка -->
+		<li><a href = "problemwindows.html"><h4>* Windows ( ОС )</a></h4></li> <!-- ссылка в элементе списка -->
+		<li><a href = "virus.html"><h4>* Вирусы </a></h4></li> <!-- ссылка в элементе списка -->
+		<li><a href = "systemfile.html"><h4>* Системные файлы</a></h4></li> <!-- ссылка в элементе списка -->
+		<li><a href = "neispravnost.html"><h4>* Комплектующие</a></h4></li> <!-- ссылка в элементе списка -->
+		<li><a href = "praise.html"><h2>Прайс</a></h2></li> <!-- ссылка в элементе списка -->
+		<li><a href = "contacts.html"><h2>Контакты</a></h2></li> <!-- ссылка в элементе списка -->
+		<li><a href = "zaiavka.html"><h2>Заявка on-line</a></h2></li> <!-- ссылка в элементе списка -->
+		</ul>
+	</nav>
+</html>
